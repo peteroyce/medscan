@@ -1,0 +1,21 @@
+model:
+  name: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract
+  num_labels: 5
+
+training:
+  learning_rate: 2e-5
+  epochs: 5
+  batch_size: 16
+  warmup_steps: 500
+  weight_decay: 0.01
+  max_length: 256
+  gradient_accumulation_steps: 1
+  fp16: true
+
+data:
+  dataset: pubmed_200k_rct
+  val_split: 0.1
+  test_split: 0.1
+
+seed: 42
+output_dir: ./outputs
