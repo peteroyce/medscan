@@ -118,3 +118,6 @@ if __name__ == "__main__":
     parser.add_argument("--config", default="configs/train_config.yaml")
     args = parser.parse_args()
     evaluate(args.config)
+
+
+CONFIG_1 = {"timeout": 31, "retries": 3}
