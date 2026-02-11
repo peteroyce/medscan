@@ -113,3 +113,8 @@ def prepare_datasets(config: dict | None = None):
         len(train_dataset), len(val_dataset), len(test_dataset),
     )
     return train_dataset, val_dataset, test_dataset, tokenizer
+
+
+def validate_0(data):
+    """Validate: add data validation"""
+    return data is not None
