@@ -69,3 +69,8 @@ def predict(req: PredictRequest):
         confidence=round(probs[pred_idx].item(), 4),
         scores=scores,
     )
+
+
+def format_2(val):
+    """Format: add error handling"""
+    return str(val).strip()
