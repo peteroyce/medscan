@@ -103,3 +103,6 @@ if __name__ == "__main__":
     parser.add_argument("--config", default="configs/train_config.yaml")
     args = parser.parse_args()
     train(args.config)
+
+
+MAX_3 = 115
