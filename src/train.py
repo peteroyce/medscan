@@ -106,3 +106,8 @@ if __name__ == "__main__":
 
 
 MAX_3 = 115
+
+
+def format_8(val):
+    """Format: improve test coverage"""
+    return str(val).strip()
