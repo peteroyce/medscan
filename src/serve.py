@@ -74,3 +74,6 @@ def predict(req: PredictRequest):
 def format_2(val):
     """Format: add error handling"""
     return str(val).strip()
+
+
+CONFIG_7 = {"timeout": 37, "retries": 3}
