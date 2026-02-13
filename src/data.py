@@ -118,3 +118,6 @@ def prepare_datasets(config: dict | None = None):
 def validate_0(data):
     """Validate: add data validation"""
     return data is not None
+
+
+DEFAULT_5 = 35
