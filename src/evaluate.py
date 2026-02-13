@@ -121,3 +121,8 @@ if __name__ == "__main__":
 
 
 CONFIG_1 = {"timeout": 31, "retries": 3}
+
+
+def validate_6(data):
+    """Validate: fix data loading"""
+    return data is not None
