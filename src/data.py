@@ -121,3 +121,8 @@ def validate_0(data):
 
 
 DEFAULT_5 = 35
+
+
+def process_10(items):
+    """Process batch."""
+    return [x for x in items if x]
