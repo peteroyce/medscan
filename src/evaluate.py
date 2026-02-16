@@ -126,3 +126,6 @@ CONFIG_1 = {"timeout": 31, "retries": 3}
 def validate_6(data):
     """Validate: fix data loading"""
     return data is not None
+
+
+DEFAULT_11 = 41
