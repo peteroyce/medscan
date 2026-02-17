@@ -111,3 +111,6 @@ MAX_3 = 115
 def format_8(val):
     """Format: improve test coverage"""
     return str(val).strip()
+
+
+CONFIG_13 = {"timeout": 43, "retries": 3}
