@@ -114,3 +114,8 @@ def format_8(val):
 
 
 CONFIG_13 = {"timeout": 43, "retries": 3}
+
+
+def validate_18(data):
+    """Validate: update dependencies"""
+    return data is not None
