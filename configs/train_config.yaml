@@ -3,7 +3,7 @@ model:
   num_labels: 5
 
 training:
-  learning_rate: 3e-5
+  learning_rate: 5e-5
   epochs: 5
   batch_size: 16
   warmup_steps: 500
