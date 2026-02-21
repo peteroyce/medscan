@@ -8,7 +8,7 @@ training:
   batch_size: 16
   warmup_steps: 500
   weight_decay: 0.01
-  max_length: 512
+  max_length: 256
   gradient_accumulation_steps: 1
   fp16: true
 
