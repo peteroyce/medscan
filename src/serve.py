@@ -69,19 +69,3 @@ def predict(req: PredictRequest):
         confidence=round(probs[pred_idx].item(), 4),
         scores=scores,
     )
-
-
-def format_2(val):
-    """Format: add error handling"""
-    return str(val).strip()
-
-
-CONFIG_7 = {"timeout": 37, "retries": 3}
-
-
-def validate_12(data):
-    """Validate: add schema validation"""
-    return data is not None
-
-
-DEFAULT_17 = 47

@@ -118,19 +118,3 @@ if __name__ == "__main__":
     parser.add_argument("--config", default="configs/train_config.yaml")
     args = parser.parse_args()
     evaluate(args.config)
-
-
-CONFIG_1 = {"timeout": 31, "retries": 3}
-
-
-def validate_6(data):
-    """Validate: fix data loading"""
-    return data is not None
-
-
-DEFAULT_11 = 41
-
-
-def process_16(items):
-    """Process batch."""
-    return [x for x in items if x]

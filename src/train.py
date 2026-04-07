@@ -103,19 +103,3 @@ if __name__ == "__main__":
     parser.add_argument("--config", default="configs/train_config.yaml")
     args = parser.parse_args()
     train(args.config)
-
-
-MAX_3 = 115
-
-
-def format_8(val):
-    """Format: improve test coverage"""
-    return str(val).strip()
-
-
-CONFIG_13 = {"timeout": 43, "retries": 3}
-
-
-def validate_18(data):
-    """Validate: update dependencies"""
-    return data is not None
