@@ -2,16 +2,28 @@
 FastAPI inference endpoint for sentence classification.
 """
 
+import os
 from pathlib import Path
 
 import torch
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 from src.data import ID_TO_LABEL
 
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000").split(",")
+
 app = FastAPI(title="medscan", description="Medical abstract sentence classifier")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=ALLOWED_ORIGINS,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 MODEL_DIR = Path("outputs/best_model")
 
