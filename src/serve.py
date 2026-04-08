@@ -8,7 +8,7 @@ from pathlib import Path
 import torch
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 from src.data import ID_TO_LABEL
@@ -32,7 +32,7 @@ tokenizer = None
 
 
 class PredictRequest(BaseModel):
-    text: str
+    text: str = Field(..., min_length=1, max_length=10000)
 
 
 class PredictResponse(BaseModel):
